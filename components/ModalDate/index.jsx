@@ -23,12 +23,12 @@ export function ModalDate(props) {
 
                <div>
 
-                 <img src={props.picture}>
+                 <img clasName="imageUser" src={props.picture}>
                    
                  </img>
                
                         <p>
-                        {`${props.name} ${props.surname}`}
+                        {props.nameComplete}
                         </p>
                       
                         <br />
