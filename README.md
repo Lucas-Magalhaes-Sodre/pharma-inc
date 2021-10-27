@@ -26,7 +26,6 @@ O seu objetivo nesse projeto, é trabalhar no desenvolvimento do Front end que c
 <hr>
 <br>
 
-![pharma-inc-zeta vercel app_](https://user-images.githubusercontent.com/43209743/130704923-164d009a-b65f-4bf5-afbc-6dc894b7ad6d.png)
 
 
 <span style="text-align:end;">Desenvoldido por <b>Lucas Sodré</b>.<span>
