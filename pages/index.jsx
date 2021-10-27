@@ -6,9 +6,9 @@ export default function Home() {
 
   return (
     <Container>
-      <Head>
+      <div id="head">
         <h1>Pharma Inc</h1>
-      </Head>
+      </div>
 
       <main> 
          
@@ -21,7 +21,7 @@ export default function Home() {
       </main>
 
       <footer>
-       
+        Pharma Inc
       </footer>
     </Container>
   )

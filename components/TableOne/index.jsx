@@ -48,15 +48,21 @@ function TableOne(props) {
           <Modal 
             isOpen={modalUser}
             onRequestClose={handleCloseModal}
+            overlayClassName="react-modal-overlay"
+            className="react-modal-content"
             >
             
               <ModalDate  
-                clasName="modal"
                 picture={props.picture}
                 name={props.name}
                 nameComplete={props.nameComplete}
                 gender={props.gender}
                 dateFirst={props.dateFirst}
+                email={props.email}
+                id={props.id}
+                cell={props.cell}
+                nat={props.nat}
+                location={props.location}
                 />
             
           </Modal>

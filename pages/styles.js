@@ -1,10 +1,18 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    /* height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    flex-direction: column; */
-`
+    #head {
+        padding-left: 20px;
+        background: var(--background);
+        color: black;
+    }
+    footer {
+        padding-bottom: 20px;
+        padding-top: 20px;
+        background: var(--background);
+        color: black;
+        text-align: center;
+    }
+    
+`;
+

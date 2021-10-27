@@ -2,7 +2,7 @@ import { Container } from './styles';
 import { format } from 'date-fns'
 import Spinner from 'react-loader-spinner'
 import TableOne from '../TableOne';
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import { UserContext} from '../../context/UserContext'
 
 
@@ -12,10 +12,11 @@ function PacientItem() {
     handleNextPage,
     users,
     loading
-  } = useContext(UserContext)
+  } = useContext(UserContext);
 
   return (
     <Container>
+     
           <table>
               <thead>
                 <tr>
@@ -46,6 +47,11 @@ function PacientItem() {
                     gender={user.gender}
                     dateFirst={format(new Date(String(user.dob.date)), "dd-MM-yyyy")}
                     setPage={handleNextPage}
+                    email={user.email}
+                    id={user.id.value}
+                    cell={user.cell}
+                    nat={user.nat}
+                    location={`${user.location.city}, ${user.location.state}, ${user.location.country}`}
                   />
 
                   ))}
@@ -61,7 +67,7 @@ function PacientItem() {
                 timeout={3000} 
               /> 
               : 
-            <button onClick={handleNextPage}>Carregar mais</button>
+            <button onClick={handleNextPage}>Loading More</button>
           }
     
     </Container>
