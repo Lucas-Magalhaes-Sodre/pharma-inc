@@ -1,27 +1,10 @@
 import { Container } from './styles';
-import api from '../../pages/api/api';
-import { useEffect, useState } from 'react'
-
-
 
 export function ModalDate(props) {
-  /*const [users, setUsers] = useState([]);
-
   
-  useEffect(() => {
-    api.get("?results=1").then((data) => {
-      setUsers(data.data.results)
-     
-    })
- 
-    //eslint-disable-next-line 
-  },[])
-*/
   return (
     <Container>
-    
-
-               <div>
+       <div>
 
                  <img src={props.picture}>
                    
@@ -51,6 +34,12 @@ export function ModalDate(props) {
 
                     <br />
                       
+                      <h5>
+                       location:
+                       {props.location}
+                      </h5> 
+                    <br />
+                      
                     <h5>
                      id: {props.id}
                     </h5> 
@@ -66,30 +55,12 @@ export function ModalDate(props) {
                     <h5>
                      nat:
                      {props.nat}
-                    </h5> 
+                    </h5>              
 
-                    <br />
-                      
-                    <h5>
-                     location:
-                     {props.location}
-                    </h5> 
-                                
-                        
-                      
-
-          </div>
-            
-             
-       
-
-          
-       
-     
+       </div>
+                
   </Container>
-      
-      
-   
+  
   );
 
 };

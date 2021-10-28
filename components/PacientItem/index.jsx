@@ -5,7 +5,6 @@ import TableOne from '../TableOne';
 import { useContext, useState } from 'react'
 import { UserContext} from '../../context/UserContext'
 
-
 function PacientItem() {
 
   const {
@@ -14,8 +13,18 @@ function PacientItem() {
     loading
   } = useContext(UserContext);
 
+  const [search, setSearch] = useState("");
+
   return (
     <Container>
+
+      <input
+      type="text"
+      placeholder="Search..."
+      onChange={(event) => {
+        setSearch(event.target.value)
+      }}
+      />
      
           <table>
               <thead>
@@ -38,7 +47,13 @@ function PacientItem() {
                 </tr>
               </thead>
               <tbody>
-                {users?.map((user) => (
+                {users?.filter((user) => {
+                  if(search == ""){
+                    return user
+                  } else if (user.name.first.toLowerCase().includes(search.toLowerCase())){
+                    return user
+                  }
+                }).map((user) => (
                   <TableOne 
                     key={user.login.uuid}
                     picture={user.picture.large}
@@ -67,7 +82,7 @@ function PacientItem() {
                 timeout={3000} 
               /> 
               : 
-            <button onClick={handleNextPage}>Loading More</button>
+            <button className="buttonLoading" onClick={handleNextPage}>Loading More</button>
           }
     
     </Container>

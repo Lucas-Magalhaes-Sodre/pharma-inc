@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.form`
         width: 400px;
-        background: white;
+        background: var(--shape);
         color: black;
         display: flex;
         align-items: center;

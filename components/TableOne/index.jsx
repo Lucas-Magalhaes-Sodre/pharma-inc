@@ -1,6 +1,4 @@
-
 import { useState } from 'react'
-
 import  Modal  from 'react-modal';
 import { ModalDate } from '../ModalDate';
 import { TableLine } from './styles';

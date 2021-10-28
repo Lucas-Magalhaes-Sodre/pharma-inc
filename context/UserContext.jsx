@@ -2,7 +2,6 @@ import api from '../pages/api/api';
 import { useEffect, useState, createContext } from 'react'
 
 
-
 export const UserContext = createContext({})
 
  export function UserProvider({ children }){
