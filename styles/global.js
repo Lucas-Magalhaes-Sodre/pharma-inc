@@ -37,10 +37,6 @@ export const GlobalStyle = createGlobalStyle`
     button{
         cursor: pointer;
     }
-    /*[disabled] {
-        opacity: 0.6;
-        cursor: not-allowed;
-    }*/
     .react-modal-overlay{
         background: rgba(0, 0, 0, 0.5);
 
@@ -54,12 +50,5 @@ export const GlobalStyle = createGlobalStyle`
         align-items: center;
         justify-content: center;
     }
-        .react-modal-content{
-            width: 100%;
-            max-width: 576px;
-            background: var(----background);
-            padding: 6rem;
-            position: relative;
-            border-radius: 0.25rem;
-        }
+       
 `;

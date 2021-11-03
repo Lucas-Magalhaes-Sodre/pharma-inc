@@ -5,6 +5,10 @@ import { Container } from './styles';
 export default function Home() {
 
   return (
+    <>
+    <Head>
+      <title>Pharma Inc</title>
+    </Head>
     <Container>
       <div id="head">
         <h1>Pharma Inc</h1>
@@ -24,5 +28,6 @@ export default function Home() {
         Pharma Inc
       </footer>
     </Container>
+    </>
   )
 }

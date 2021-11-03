@@ -8,7 +8,6 @@ function MyApp({ Component, pageProps }) {
         <GlobalStyle /> 
       </UserProvider>
   )
-
 }
 
 export default MyApp
