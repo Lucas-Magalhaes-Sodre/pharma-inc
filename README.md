@@ -20,7 +20,7 @@ O seu objetivo nesse projeto, é trabalhar no desenvolvimento do Front end que c
 </ul>
 
 <h2>Como instalar o projeto</h2>
-<p>Baixe o projeto no github e use NPM INSTALL para instalar a node modules, depois da instalação use NPM START.</p>
+<p>Baixe o projeto no github e use NPM INSTALL para instalar a node modules, depois da instalação use NPM DEV.</p>
 
 
 <hr>
