@@ -10,18 +10,12 @@ export default function Home() {
       <title>Pharma Inc</title>
     </Head>
     <Container>
-      <div id="head">
+      <header>
         <h1>Pharma Inc</h1>
-      </div>
+      </header>
 
-      <main> 
-         
-      <div>
-      
-      <PacientItem />
-
-      </div>
-        
+      <main>     
+      <PacientItem /> 
       </main>
 
       <footer>

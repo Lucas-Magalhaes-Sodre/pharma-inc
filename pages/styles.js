@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    #head {
+    header {
         padding-left: 20px;
         background: var(--background);
         color: var(--blue);
